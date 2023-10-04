@@ -9,13 +9,13 @@ const SetupPage = async () => {
     where: {
       members: {
         some: {
-          id: profile.id,
+          profileId: profile.id,
         },
       },
     },
   });
   if (server) {
-    redirect(`/channels/${server.id}`);
+    return redirect(`/servers/${server.id}`);
   }
   return <InitialModal></InitialModal>;
 };

@@ -14,8 +14,9 @@ export const ModalProvider = () => {
     return null;
   }
 
-  return;
-  <>
-    <CreateServerModal />
-  </>;
+  return (
+    <>
+      <CreateServerModal />
+    </>
+  );
 };
